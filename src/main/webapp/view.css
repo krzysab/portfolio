@@ -6,28 +6,43 @@ body {
     background-color: aquamarine;
 }
 
-button {
-}
-
-.row {
-    background-color: cornflowerblue;
-}
-
 .col-sm {
     background-color: #ffff8e;
     padding-top: 10px;
     padding-bottom: 10px;
-
 }
 
-.container-fluid {
+#contLeft, #contRight {
+    font-size: small;
+    font-style: italic;
+    display: flex;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#left {
     background-color: #5fff71;
+}
+
+#right {
+    background-color: greenyellow;
 }
 
 #footer {
     font-size: x-small;
     position: fixed;
     height: 40px;
-    background: #ffff8e;
     bottom: 0;
+}
+
+#central {
+    position: relative;
+}
+
+#menu {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
