@@ -23,3 +23,11 @@ button {
 .container-fluid {
     background-color: #5fff71;
 }
+
+#footer {
+    font-size: x-small;
+    position: fixed;
+    height: 40px;
+    background: #ffff8e;
+    bottom: 0;
+}
