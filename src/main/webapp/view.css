@@ -1,0 +1,25 @@
+div {
+    text-align: center;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+button {
+}
+
+.row {
+    background-color: cornflowerblue;
+}
+
+.col-sm {
+    background-color: #ffff8e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.container-fluid {
+    background-color: #5fff71;
+}
