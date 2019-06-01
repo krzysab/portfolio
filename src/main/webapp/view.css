@@ -46,3 +46,8 @@ body {
     top: 0px;
     z-index: 1;
 }
+
+#frame {
+    height: 300px;
+
+}

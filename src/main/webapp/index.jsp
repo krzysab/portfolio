@@ -23,7 +23,9 @@
       </div>
 
       <div class="col-sm">
-        <%@ include file="contentRight.html"%>
+        <iframe id="frame" src="contentRight.html">
+          <%--<%@ include file="contentRight.html"%>--%>
+        </iframe>
       </div>
 
     </div>
