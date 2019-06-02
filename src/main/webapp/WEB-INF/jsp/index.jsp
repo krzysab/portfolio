@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,14 +10,18 @@
     <script type="text/javascript" charset="utf-8" src="teavm/classes.js"></script>-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="view.css">
+    <link rel="stylesheet" type="text/css" href="../../view.css">
     <title>moje portfolio</title>
   </head>
 
   <body>
-  <%@ include file="menu.html"%>
+  <%@ include file="../../menu.html"%>
 
-  <div class="container-fluid" id="central">
+  <c:forEach var="project" items="${projects}">
+    Item <c:out value = "${project}"/>
+  </c:forEach>
+
+  <%--<div class="container-fluid" id="central">
     <div class="row">
 
       <div class="col-sm">
@@ -25,13 +30,13 @@
 
       <div class="col-sm">
         <iframe id="frame" src="contentRight.html">
-          <%--<%@ include file="contentRight.html"%>--%>
+          &lt;%&ndash;<%@ include file="contentRight.html"%>&ndash;%&gt;
         </iframe>
       </div>
 
     </div>
 
-  </div>
+  </div>--%>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -46,6 +51,6 @@
           crossorigin="anonymous"></script>
 
 
-  <%@ include file="footer.html"%>
+  <%@ include file="../../footer.html"%>
   </body>
 </html>

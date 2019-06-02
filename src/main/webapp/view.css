@@ -47,7 +47,13 @@ body {
     z-index: 1;
 }
 
-#frame {
-    height: 300px;
+p {
+    font-style: italic;
+}
 
+iframe {
+    border: none;
+    outline: none;
+    height: 600px;
+    width: 400px;
 }
