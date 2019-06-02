@@ -22,4 +22,12 @@ public class ProjectController {
         model.addAttribute("projects", list);
         return "index";
     }
+
+    @RequestMapping(value = "/projects", method = RequestMethod.GET)
+    public String projects(Model model) {
+        List<Project> list = service.getAll();
+        model.addAttribute("projects", list);
+        return "projects";
+    }
+
 }

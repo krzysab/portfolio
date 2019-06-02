@@ -1,7 +1,15 @@
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <div class="container">
     <div class="row">
         <div class="col-sm" id="right">
             <h2>projekty</h2>
+            <c:forEach var="project" items="${projects}">
+                name: <c:out value = "${project.name}"/><br>
+            </c:forEach>
+
+            <output ></output>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae euismod nisi,
                 in pretium lacus. Morbi bibendum quam sed aliquet lacinia. Aenean tincidunt lobortis
                 ex, a ornare eros consectetur sit amet. Mauris nunc turpis, varius nec nisi at, cursus
