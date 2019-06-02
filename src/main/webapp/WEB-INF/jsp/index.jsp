@@ -1,5 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,26 +18,29 @@
   <body>
   <%@ include file="../../menu.html"%>
 
-  <c:forEach var="project" items="${projects}">
+  <%--<c:forEach var="project" items="${projects}">
     Item <c:out value = "${project}"/>
-  </c:forEach>
+  </c:forEach>--%>
 
-  <%--<div class="container-fluid" id="central">
+
+  <div class="container-fluid" id="central">
     <div class="row">
 
+      <%--<iframe height="300px" width="100%" src="welcome.html" name="frame"></iframe>--%>
+
       <div class="col-sm">
-        <%@ include file="contentLeft.html"%>
+        <iframe height="300px" width="100%" src="welcome.html" name="leftBox"></iframe>
+        <%--<%@ include file="contentLeft.html"%>--%>
       </div>
 
       <div class="col-sm">
-        <iframe id="frame" src="contentRight.html">
-          &lt;%&ndash;<%@ include file="contentRight.html"%>&ndash;%&gt;
-        </iframe>
+        <iframe height="300px" width="100%" src="" name="rightBox"></iframe>
+        <%--<%@ include file="contentRight.html"%>--%>
       </div>
 
     </div>
 
-  </div>--%>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
