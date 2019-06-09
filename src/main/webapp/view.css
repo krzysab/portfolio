@@ -1,0 +1,59 @@
+div {
+    text-align: center;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.col-sm {
+    background-color: #ffff8e;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#contLeft, #contRight {
+    font-size: small;
+    font-style: italic;
+    display: flex;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#left {
+    background-color: #5fff71;
+}
+
+#right {
+    background-color: greenyellow;
+}
+
+#footer {
+    font-size: x-small;
+    position: fixed;
+    height: 40px;
+    bottom: 0;
+}
+
+#central {
+    position: relative;
+}
+
+#menu {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+p {
+    font-style: italic;
+}
+
+iframe {
+    border: none;
+    outline: none;
+    height: 600px;
+    width: 400px;
+}
